@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Calculator</h2>
+
+<form method ="post">{% csrf_token %}
+  <label for="fname">a</label><br>
+  <input type="text" name="a"><br>
+  <label for="lname">b</label><br>
+  <input type="text" name="b"><br><br>
+  <label for="fname">Select Operator:</label><br>
+
+  <select name ="opr">
+
+   <option value="+">Add</option>
+   <option value="-">Sub</option>
+   <option value="*">Mul</option>
+   <option value="/">Div</option>
+   <option value="**">Power</option>
+
+  </select>
+
+  <button type="submit">Calculator:</button><br>
+  <label >Output:</label><br>
+  <input type="text" value="{{o}}">
+
+</form> 
+</body>
+</html>
+
